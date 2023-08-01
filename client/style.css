@@ -1,0 +1,143 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.10);
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+main span {
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    height: 15px;
+    width: 15px;
+}
+
+main span:nth-of-type(1) {
+    background-color: #FA6B66;
+}
+
+main span:nth-of-type(2) {
+    background-color: #FBBC53;
+}
+
+main span:nth-of-type(3) {
+    background-color: #52C960;
+}
+
+div.receive {
+    display: flex;
+    height: calc(100% - 100px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+div.receive output {
+    font-size: 1rem;
+    height: 100%;
+    padding: 50px 20px 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+div.receive output .me {
+    background-color: #0D83FF;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    color: #FFFFFF;
+    margin: 20px 0 0 30%;
+    padding: 20px;
+}
+
+div.receive output .me + .hora {
+    color: #696969;
+    font-size: 0.7rem;
+    padding: 2px 0; 
+    text-align: right;
+}
+
+div.receive output .you {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    margin: 20px 30% 0 0;
+    padding: 20px;
+}
+
+div.receive output .you + .hora {
+    color: #696969;
+    font-size: 0.7rem;
+    padding: 2px 0; 
+    text-align: left;
+}
+
+div.send {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100px;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+div.send input {
+    background-color: #F2F2F2;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    flex: 1 1 100%;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+div.send input:focus {
+    outline: none;
+}
+
+div.button {
+    display: flex;
+    flex: 1 0 40px;
+}
+
+div.button button {
+    align-items: center;
+    background-color: #2F9AF9;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+}
+
+div.button button svg {
+    height: 36px;
+    fill: #FFFFFF;
+    width: 27px;
+}
